@@ -5,9 +5,9 @@ lesson git command
 
 `git clone`
 `git add`
-`git commit -m`
+`git commit`
 `git status`
-`git push origin master`
+`git push`
 `git pull`
 
 1. Githubでリポジトリ作成
@@ -17,12 +17,13 @@ lesson git command
 1. git pullで変更した内容を取得しよう
 1. 同じファイルを編集していた場合
 1. Tips
+1. 使いそうなコマンド
 
 
 # 1.Githubでリポジトリ作成
 
 + Githubにログイン
-+ 画面右上の「＋」を押して、　**New repository** を選択
++ 画面右上の「+」を押して、　**New repository** を選択
 + 適当に設定して **create repository** を選択。なお、 **Initialize this repository with a README**  についてはチェックを入れておき、READMEファイルを作成すること。
  
 # 2.git cloneしてみる
@@ -86,3 +87,35 @@ Githubにアクセスし、READMEを編集する。
 + Cygwinでは git-completion パッケージをインストールするとgitのコマンド補完をしてくれる
 + PS1 変数をいじるとプロンプトにブランチ名が表示されるので良い
 + git-creadentialsを使うとHTTP認証の入力を1回のみで良い
++ git管理に含めない設定は **.gitignore** を作成し、除外ファイルを指定できる。正規表現が指定可能。.gitignoreファイルを配置したディレクトリ及びそのサブディレクトリも有効。
+
+# 8.よく使うコマンド
+
+各コマンドのhelp
+
+    $git help <command>
+
+gitの設定を確認
+
+    $git config -l
+
+commitの確認
+
+    $git log
+
+直前のcommitを取り消してHEADの一つ前に戻る
+
+    $git reset --hard HEAD^
+
+特定のバージョンに戻る。fugaはgit logで確認
+
+    $git reset --hard fuga
+
+ステージング環境からの削除、移動
+
+    $git rm hoge
+    $git mv hoge fuga
+
+ブランチの変更。hogeブランチに変更
+
+    $git branch hoge
