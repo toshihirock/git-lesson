@@ -1,4 +1,2 @@
 git-lesson
 ==========
-
-git-lesson
