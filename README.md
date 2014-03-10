@@ -111,11 +111,19 @@ commitの確認
 
     $git reset --hard fuga
 
-ステージング環境からの削除、移動
+ステージングからの削除、移動
 
     $git rm hoge
     $git mv hoge fuga
 
+ステージングの変更を取り消し
+
+    $git checkout hoge.txt
+
 ブランチの変更。hogeブランチに変更
 
     $git branch hoge
+    
+タグ付け。hogeという名前のタグをHEADに付ける
+
+    $git tag hoge
