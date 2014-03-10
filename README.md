@@ -11,10 +11,13 @@ lesson git command
 `git pull`
 
 1. Githubでリポジトリ作成
-2. git cloneしてみる
-3. git add, git commitしてみる
-5. git pushでリモートサーバーに情報をpushしてみよう
-6. git pullで変更した内容を取得しよう
+1. git cloneしてみる
+1. git add, git commitしてみる
+1. git pushでリモートサーバーに情報をpushしてみよう
+1. git pullで変更した内容を取得しよう
+1. 同じファイルを編集していた場合
+1. Tips
+
 
 # 1.Githubでリポジトリ作成
 
