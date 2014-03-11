@@ -127,3 +127,4 @@ commitの確認
 タグ付け。hogeという名前のタグをHEADに付ける
 
     $git tag hoge
+test
